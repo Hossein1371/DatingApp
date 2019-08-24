@@ -38,8 +38,8 @@ export class AuthService {
     );
   }
 
-  regiter(model: any) {
-    return this.http.post(this.baseUrl + 'register', model);
+  regiter(user: User) {
+    return this.http.post(this.baseUrl + 'register', user);
   }
 
   loggedInd() {
